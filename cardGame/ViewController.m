@@ -51,7 +51,7 @@
         [cardButton setTitle:[self titleForCard:card] forState:UIControlStateNormal];
         [cardButton setBackgroundImage:[self imageForCard:card] forState:UIControlStateNormal];
         cardButton.enabled=!card.isMatched;
-        NSLog(self.game.score);
+        NSLog([NSString stringWithFormat:@"Score:%d",self.game.score]);
         self.scoreLabel.text=[NSString stringWithFormat:@"Score:%d",self.game.score];
     }
 }
